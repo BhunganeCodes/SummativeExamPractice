@@ -94,7 +94,15 @@ public class LoopsAndShapes {
      */
     public static int countVowels(String text) {
         // TODO: Implement this method
-        return 0;
+        int count = 0;
+        text = text.toLowerCase();
+
+        for (char ch : text.toCharArray()) {
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+                count++;
+            }
+        }
+        return count;
     }
 
     /**
