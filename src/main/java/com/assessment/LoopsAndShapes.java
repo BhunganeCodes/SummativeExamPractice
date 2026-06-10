@@ -44,7 +44,11 @@ public class LoopsAndShapes {
      */
     public static int findLargest(List<Integer> numbers) {
         // TODO: Implement this method
-        return 0;
+        int result = numbers.get(0);
+        for (int num : numbers) {
+            if (num > result) result = num;
+        }
+        return result;
     }
 
     /**
