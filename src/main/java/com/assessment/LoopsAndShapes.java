@@ -115,7 +115,12 @@ public class LoopsAndShapes {
      */
     public static int multiplyListElements(List<Integer> numbers) {
         // TODO: Implement this method
-        return 0;
+        int res = 1;
+
+        for (int num : numbers) {
+            res *= num;
+        }
+        return res;
     }
 
     /**
