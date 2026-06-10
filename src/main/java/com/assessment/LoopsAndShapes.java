@@ -155,7 +155,21 @@ public class LoopsAndShapes {
      */
     public static List<Integer> fibonacciSequence(int n) {
         // TODO: Implement this method
-        return null;
+        List<Integer> res = new ArrayList<>();
+
+        if (n == 0) return res;
+        if (n == 1) {
+            res.add(0);
+            return res;
+        }
+        res.add(0);
+        res.add(1);
+
+        for (int i = 2; i < n; i++) {
+            res.add(res.get(i - 2) + res.get(i - 1));
+        }
+
+        return res;
     }
 
     /**
