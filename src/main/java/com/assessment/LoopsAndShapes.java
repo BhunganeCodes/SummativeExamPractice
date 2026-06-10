@@ -29,7 +29,12 @@ public class LoopsAndShapes {
      */
     public static int sumNumbers(List<Integer> numbers) {
         // TODO: Implement this method
-        return 0;
+        int result = 0;
+
+        for(int num : numbers) {
+            result += num;
+        }
+        return result;
     }
 
     /**
