@@ -58,7 +58,12 @@ public class LoopsAndShapes {
      */
     public static int countEvenNumbers(List<Integer> numbers) {
         // TODO: Implement this method
-        return 0;
+        int result = 0;
+
+        for (int num : numbers) {
+            if (num % 2 == 0) result++;
+        }
+        return result;
     }
 
     /**
