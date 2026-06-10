@@ -136,7 +136,16 @@ public class LoopsAndShapes {
      */
     public static List<String> createBasicNumberTriangle(int n) {
         // TODO: Implement this method
-        return null;
+        List<String> res = new ArrayList<>();
+
+        for (int i = 1; i <= n; i++) {
+            String row = "";
+            for (int j = 1; j <= i; j++) {
+                row += i;
+            }
+            res.add(row);
+        }
+        return res;
     }
 
     /**
