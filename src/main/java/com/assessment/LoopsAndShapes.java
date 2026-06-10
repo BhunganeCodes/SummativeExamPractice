@@ -16,7 +16,7 @@ public class LoopsAndShapes {
      */
     public static int countItems(List<?> items) {
         // TODO: Implement this method
-        return 0;
+        return items.toArray().length;
     }
 
     /**
